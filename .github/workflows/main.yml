@@ -7,7 +7,7 @@ on:
 jobs:
   # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Cypress v9 and lower ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
 
-  basic-ubuntu-18:
+  basic-ubuntu-18-v10:
     runs-on: ubuntu-18.04
     steps:
       - name: Checkout
@@ -20,7 +20,7 @@ jobs:
         # the parameters below are only necessary
         # because we are running these examples in a monorepo
         with:
-          working-directory: examples/v9/basic
+          working-directory: examples/v10/basic
           # just for full picture after installing Cypress
           # print information about detected browsers, etc
           # see https://on.cypress.io/command-line#cypress-info
